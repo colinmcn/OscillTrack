@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+OscillTrack - Real-time brain activity tracking and adaptive stimulation.
 
-You can use the [editor on GitHub](https://github.com/colinmcn/OscillTrack/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+OscillTrack tracks oscillatory activity of a defined frequency in real-time. It provides a complex estimate of the signal within a frequency band of interest and from this the instantaneous phase and amplitude. It can be used to trigger stimulation. Please cite [McNamara et al. (doi.org/10.1101/2021.10.14.464387)](https://doi.org/10.1101/2021.10.14.464387) in publications that avail of this general method of oscillatory tracking. Further information is available in the publication.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Download
 
-### Markdown
+OscillTrack code download is available for academic use [here](https://process.innovation.ox.ac.uk/software/p/15929/oscilltrack-academic/1).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We provide floating-point microcontroller code tested on Teensy 4.0 clocked at 24 MHz and Teensy LC Arduino compatible 32 bit ARM Cortex-M series (M7 and M0 respectively) microcontroller boards. This code can be adapted for use in a wide range of settings.  The Teensy 4.0 can accommodate higher sample rates whereas the maximum sample rate with the Teensy LC is 1k without serial port active and 625 with serial port active.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/colinmcn/OscillTrack/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+We also provide a fixed precision digital circuit hardware description of OscillTrack in Verilog, which was implemented on an FPGA to conduct the experiments described in [McNamara et al.](https://doi.org/10.1101/2021.10.14.464387)
